@@ -1,4 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 import { useGameStore } from "./GameClient";
 import Controls from "./Controls";
 import Links from "./Links";
@@ -42,13 +43,15 @@ const MenuDialog = () => {
       <Dialog.Portal>
         <Dialog.Overlay />
         <Dialog.Content>
-          <div className="h-full">
+          <div className="absolute top-8 left-8 bg-zinc-800 text-zinc-500">
+            <VisuallyHidden.Root>
+              <Dialog.Title>Menu</Dialog.Title>
+              <Dialog.Description>Menu</Dialog.Description>
+            </VisuallyHidden.Root>
             <div className="mb-4 flex justify-between">
               <div>
-                <Button className="first:mr-4" onClick={toggleMusic}>
-                  Music {buttonStatus(music)}
-                </Button>
-                <Button onClick={toggleFx}>Sound FX {buttonStatus(fx)}</Button>
+                <Button className="mr-4" onClick={toggleMusic}>Music {buttonStatus(music)}</Button>
+                <Button className="mr-4" onClick={toggleFx}>Sound FX {buttonStatus(fx)}</Button>
               </div>
               <Dialog.Close>Close</Dialog.Close>
             </div>
@@ -57,7 +60,6 @@ const MenuDialog = () => {
             <Links />
 
             <h2 className="text-lg mb-4">Have fun!</h2>
-            <p>&copy; Copyright 2023 Ivan Quirino</p>
           </div>
         </Dialog.Content>
       </Dialog.Portal>

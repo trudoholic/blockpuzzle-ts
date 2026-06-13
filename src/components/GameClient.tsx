@@ -4,13 +4,13 @@ import { storeFactory } from "../store";
 import TopUI from "./TopUI";
 // import Music from "./Music";
 // import SoundEffects from "./SoundEffects";
-import WelcomeDialog from "./WelcomeDialog";
+// import WelcomeDialog from "./WelcomeDialog";
 import GamePad from "./GamePad";
 import StatusOverlay from "./StatusOverlay";
 import { css } from "@stitches/react";
 import { baseWidth, baseHeight, baseSize, idleInput } from "../constants";
 import Game from "./Game";
-// import GameCanvas from "./GameCanvas";
+import GameCanvas from "./GameCanvas";
 
 export const { store, useGameStore } = storeFactory();
 
@@ -75,7 +75,7 @@ function GameClient() {
 
       {/*<Music />*/}
       {/*<SoundEffects />*/}
-      <WelcomeDialog />
+      {/*<WelcomeDialog />*/}
     </div>
   );
 }
