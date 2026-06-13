@@ -1,5 +1,6 @@
 import { storeFactory } from "../store";
 import Button from "./Button";
+import WelcomeDialog from "./WelcomeDialog";
 
 // const { store, useGameStore } = storeFactory();
 const { useGameStore } = storeFactory();
@@ -22,6 +23,7 @@ function GameClient() {
         </Button>
         <Button onClick={toggleFx}>Sound FX {buttonStatus(fx)}</Button>
       </div>
+      <WelcomeDialog/>
     </>
   )
 }
