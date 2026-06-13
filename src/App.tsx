@@ -4,7 +4,9 @@ import GameClient from "./components/GameClient";
 
 function App() {
   return (
-    <GameClient/>
+    <div className="h-[100%] flex justify-center">
+      <GameClient />
+    </div>
   )
 }
 

@@ -2,8 +2,8 @@ import { useRef, useState, useLayoutEffect } from "react";
 // import { useSearchParams } from "next/navigation";
 import { storeFactory } from "../store";
 import TopUI from "./TopUI";
-import Music from "./Music";
-import SoundEffects from "./SoundEffects";
+// import Music from "./Music";
+// import SoundEffects from "./SoundEffects";
 import WelcomeDialog from "./WelcomeDialog";
 import GamePad from "./GamePad";
 import StatusOverlay from "./StatusOverlay";
@@ -73,8 +73,8 @@ function GameClient() {
         )}
       </div>
 
-      <Music />
-      <SoundEffects />
+      {/*<Music />*/}
+      {/*<SoundEffects />*/}
       <WelcomeDialog />
     </div>
   );

@@ -3,7 +3,9 @@ interface IconProps {
 }
 
 const RotateIcon = ({ className }: IconProps) => {
-  const classes = `h-[32px] w-[32px] text-white group-active:text-black ${className}`;
+  // const classes = `h-[32px] w-[32px] text-white group-active:text-black ${className}`;
+  const classes = `h-[32px] w-[32px] text-neutral-300 group-active:text-neutral-900 ${className}`;
+
   return (
     <svg
       className={classes}
