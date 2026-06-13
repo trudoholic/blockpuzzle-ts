@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { store } from "./GameClient";
-import korobeiniki from './assets/korobeiniki.ogg'; // Import file if managed by Webpack/Vite
+import korobeiniki from '../assets/korobeiniki.ogg'; // Import file if managed by Webpack/Vite
 
 const Music = () => {
   const musicRef = useRef<HTMLAudioElement>(null);

@@ -2,13 +2,13 @@ import { useEffect, useRef } from "react";
 import { store } from "./GameClient";
 import React from "react";
 
-import rotate from './assets/rotate.ogg';
-import move from './assets/move.ogg';
-import clear from './assets/clear.ogg';
-import lvup from './assets/lvup.ogg';
-import landing from './assets/landing.ogg';
-import drop from './assets/drop.ogg';
-import gameover from './assets/gameover.ogg';
+import rotate from '../assets/rotate.ogg';
+import move from '../assets/move.wav';
+import clear from '../assets/clear.ogg';
+import lvup from '../assets/lvup.ogg';
+import landing from '../assets/landing.ogg';
+import drop from '../assets/drop.ogg';
+import gameover from '../assets/gameover.ogg';
 
 const SoundEffects = () => {
   const sounds = useRef({
