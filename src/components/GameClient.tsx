@@ -2,8 +2,7 @@ import { storeFactory } from "../store";
 import WelcomeDialog from "./WelcomeDialog";
 import TopUI from "./TopUI";
 
-// const { store, useGameStore } = storeFactory();
-export const { useGameStore } = storeFactory();
+export const { store, useGameStore } = storeFactory();
 
 function GameClient() {
 
